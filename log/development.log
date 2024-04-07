@@ -27,3 +27,488 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 150ms (Views: 139.8ms | ActiveRecord: 0.5ms | Allocations: 103926)
 
 
+Started GET "/" for ::1 at 2024-04-07 17:17:59 +0900
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1696)
+  Rendered layout layouts/application.html.erb (Duration: 24.6ms | Allocations: 37674)
+Completed 200 OK in 28ms (Views: 25.1ms | ActiveRecord: 0.5ms | Allocations: 38992)
+
+
+Started GET "/" for ::1 at 2024-04-07 17:25:22 +0900
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1616)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 16916)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.4ms | Allocations: 17337)
+
+
+Started POST "/posts" for ::1 at 2024-04-07 17:25:38 +0900
+Processing by PostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"テックキャンプ", "commit"=>"投稿する"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.1ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('テックキャンプ', '2024-04-07 08:25:38.671265', '2024-04-07 08:25:38.671265')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 2.5ms | Allocations: 7359)
+
+
+Started GET "/" for ::1 at 2024-04-07 17:25:38 +0900
+Processing by PostsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1720)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 3882)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 4232)
+
+
+Started GET "/" for ::1 at 2024-04-07 18:48:55 +0900
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1649)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 16723)
+Completed 200 OK in 17ms (Views: 13.7ms | ActiveRecord: 1.2ms | Allocations: 17143)
+
+
+Started POST "/posts" for ::1 at 2024-04-07 18:49:04 +0900
+Processing by PostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"メモ", "commit"=>"投稿する"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('メモ', '2024-04-07 09:49:04.073260', '2024-04-07 09:49:04.073260')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 2.5ms | Allocations: 2344)
+
+
+Started GET "/" for ::1 at 2024-04-07 18:49:04 +0900
+Processing by PostsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1685)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 3845)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 4149)
+
+
+Started POST "/posts" for ::1 at 2024-04-07 18:49:04 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"メモ"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.2ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('メモ', '2024-04-07 09:49:04.126462', '2024-04-07 09:49:04.126462')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 2.8ms | Allocations: 2347)
+
+
+Started GET "/" for ::1 at 2024-04-07 18:49:04 +0900
+Processing by PostsController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1693)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 3853)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms | Allocations: 4235)
+
+
+Started POST "/posts" for ::1 at 2024-04-07 18:49:16 +0900
+Started POST "/posts" for ::1 at 2024-04-07 18:49:16 +0900
+Processing by PostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"メモ2", "commit"=>"投稿する"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Processing by PostsController#create as */*
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"メモ2"}
+  [1m[36mPost Create (0.5ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('メモ2', '2024-04-07 09:49:16.231151', '2024-04-07 09:49:16.231151')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 2.8ms | Allocations: 4037)
+
+
+  [1m[36mPost Create (1.1ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('メモ2', '2024-04-07 09:49:16.234628', '2024-04-07 09:49:16.234628')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 2.3ms | Allocations: 4022)
+
+
+Started GET "/" for ::1 at 2024-04-07 18:49:16 +0900
+Processing by PostsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1750)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 3938)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.2ms | Allocations: 4244)
+
+
+Started GET "/" for ::1 at 2024-04-07 18:49:16 +0900
+Processing by PostsController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1744)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 3904)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 4211)
+
+
+Started GET "/" for ::1 at 2024-04-07 18:50:17 +0900
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1758)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 17004)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.3ms | Allocations: 17304)
+
+
+Started POST "/posts" for ::1 at 2024-04-07 18:50:23 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"メモ3"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.2ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('メモ3', '2024-04-07 09:50:23.351316', '2024-04-07 09:50:23.351316')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 2.8ms | Allocations: 2346)
+
+
+Started GET "/" for ::1 at 2024-04-07 18:50:23 +0900
+Processing by PostsController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1817)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 3977)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 4283)
+
+
+Started POST "/posts" for ::1 at 2024-04-07 18:50:23 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"メモ3"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('メモ3', '2024-04-07 09:50:23.871075', '2024-04-07 09:50:23.871075')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 2.6ms | Allocations: 2345)
+
+
+Started GET "/" for ::1 at 2024-04-07 18:50:23 +0900
+Processing by PostsController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1796)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 3956)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms | Allocations: 4262)
+
+
+Started POST "/posts" for ::1 at 2024-04-07 18:50:24 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"メモ3"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('メモ3', '2024-04-07 09:50:24.861190', '2024-04-07 09:50:24.861190')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 2.1ms | Allocations: 2354)
+
+
+Started GET "/" for ::1 at 2024-04-07 18:50:24 +0900
+Processing by PostsController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1824)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 3984)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 4290)
+
+
+Started POST "/posts" for ::1 at 2024-04-07 18:50:25 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"メモ3"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('メモ3', '2024-04-07 09:50:25.522098', '2024-04-07 09:50:25.522098')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 2.2ms | Allocations: 2356)
+
+
+Started GET "/" for ::1 at 2024-04-07 18:50:25 +0900
+Processing by PostsController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1856)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 4044)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 4352)
+
+
+Started POST "/posts" for ::1 at 2024-04-07 18:50:26 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"メモ3"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.6ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('メモ3', '2024-04-07 09:50:26.240959', '2024-04-07 09:50:26.240959')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 3.4ms | Allocations: 2366)
+
+
+Started GET "/" for ::1 at 2024-04-07 18:50:26 +0900
+Processing by PostsController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1867)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 4053)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.2ms | Allocations: 4360)
+
+
+Started POST "/posts" for ::1 at 2024-04-07 18:50:26 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"メモ3"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('メモ3', '2024-04-07 09:50:26.561057', '2024-04-07 09:50:26.561057')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 3.1ms | Allocations: 2357)
+
+
+Started GET "/" for ::1 at 2024-04-07 18:50:26 +0900
+Processing by PostsController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1905)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 4065)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 4371)
+
+
+Started POST "/posts" for ::1 at 2024-04-07 18:50:26 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"メモ3"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.2ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('メモ3', '2024-04-07 09:50:26.790803', '2024-04-07 09:50:26.790803')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 2.3ms | Allocations: 2363)
+
+
+Started GET "/" for ::1 at 2024-04-07 18:50:26 +0900
+Processing by PostsController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1930)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 4091)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 4398)
+
+
+Started POST "/posts" for ::1 at 2024-04-07 18:50:27 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"メモ3"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.2ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('メモ3', '2024-04-07 09:50:27.070890', '2024-04-07 09:50:27.070890')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (5.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 5.5ms | Allocations: 2372)
+
+
+Started GET "/" for ::1 at 2024-04-07 18:50:27 +0900
+Processing by PostsController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1962)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 4122)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.3ms | Allocations: 4428)
+
+
+Started POST "/posts" for ::1 at 2024-04-07 18:50:27 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"メモ3"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.2ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('メモ3', '2024-04-07 09:50:27.271128', '2024-04-07 09:50:27.271128')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 3.9ms | Allocations: 2348)
+
+
+Started GET "/" for ::1 at 2024-04-07 18:50:27 +0900
+Processing by PostsController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1966)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 4126)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.2ms | Allocations: 4432)
+
+
+Started POST "/posts" for ::1 at 2024-04-07 18:50:27 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"メモ3"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('メモ3', '2024-04-07 09:50:27.470821', '2024-04-07 09:50:27.470821')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 2.5ms | Allocations: 2342)
+
+
+Started GET "/" for ::1 at 2024-04-07 18:50:27 +0900
+Processing by PostsController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2017)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 4205)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.2ms | Allocations: 4512)
+
+
+Started GET "/" for ::1 at 2024-04-07 18:50:30 +0900
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 2010)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 4196)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 4497)
+
+
+Started GET "/" for ::1 at 2024-04-07 18:51:44 +0900
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2016)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 4201)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.4ms | Allocations: 4500)
+
+
+Started POST "/posts" for ::1 at 2024-04-07 18:51:50 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"あ"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.5ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('あ', '2024-04-07 09:51:50.720891', '2024-04-07 09:51:50.720891')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 2.7ms | Allocations: 2342)
+
+
+Started GET "/" for ::1 at 2024-04-07 18:51:50 +0900
+Processing by PostsController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 2034)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 4195)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.2ms | Allocations: 4501)
+
+
+Started POST "/posts" for ::1 at 2024-04-07 18:52:44 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"い"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.2ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('い', '2024-04-07 09:52:44.712724', '2024-04-07 09:52:44.712724')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 1.9ms | Allocations: 2345)
+
+
+Started GET "/" for ::1 at 2024-04-07 18:52:44 +0900
+Processing by PostsController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 2061)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 4221)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms | Allocations: 4527)
+
+
+Started GET "/" for ::1 at 2024-04-07 18:53:10 +0900
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 2055)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 4216)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms | Allocations: 4516)
+
+
