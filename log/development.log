@@ -512,3 +512,498 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms | Allocations: 4516)
 
 
+Started GET "/" for ::1 at 2024-04-09 21:44:27 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 6424)
+  Rendered layout layouts/application.html.erb (Duration: 55.8ms | Allocations: 46678)
+Completed 200 OK in 64ms (Views: 56.8ms | ActiveRecord: 1.2ms | Allocations: 51743)
+
+
+Started POST "/posts" for ::1 at 2024-04-09 21:44:38 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"2"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.9ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('2', '2024-04-09 12:44:38.428231', '2024-04-09 12:44:38.428231')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 3.3ms | Allocations: 3721)
+
+
+  
+NameError (undefined local variable or method `post' for #<PostsController:0x0000000000aaf0>):
+  
+app/controllers/posts_controller.rb:11:in `create'
+Started GET "/" for ::1 at 2024-04-09 21:44:41 +0900
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2062)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 4257)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.3ms | Allocations: 4567)
+
+
+Started POST "/posts" for ::1 at 2024-04-09 21:50:28 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"3"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('3', '2024-04-09 12:50:28.174697', '2024-04-09 12:50:28.174697')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 2.3ms | Allocations: 2688)
+
+
+  
+NameError (undefined local variable or method `post' for #<PostsController:0x0000000000af00>):
+  
+app/controllers/posts_controller.rb:11:in `create'
+Started POST "/posts" for ::1 at 2024-04-09 22:02:20 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"3"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('3', '2024-04-09 13:02:20.142637', '2024-04-09 13:02:20.142637')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 2.8ms | Allocations: 2692)
+
+
+  
+NameError (undefined local variable or method `post' for #<PostsController:0x0000000000b270>):
+  
+app/controllers/posts_controller.rb:11:in `create'
+Started POST "/posts" for ::1 at 2024-04-09 22:08:40 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"3"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('3', '2024-04-09 13:08:40.788866', '2024-04-09 13:08:40.788866')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 2.1ms | Allocations: 2679)
+
+
+  
+NameError (undefined local variable or method `post' for #<PostsController:0x0000000000b5b8>):
+  
+app/controllers/posts_controller.rb:11:in `create'
+Started POST "/posts" for ::1 at 2024-04-09 22:10:10 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"3"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.2ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('3', '2024-04-09 13:10:10.476992', '2024-04-09 13:10:10.476992')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 1.9ms | Allocations: 2581)
+
+
+  
+NameError (undefined local variable or method `post' for #<PostsController:0x0000000000b928>):
+  
+app/controllers/posts_controller.rb:11:in `create'
+Started POST "/posts" for ::1 at 2024-04-09 22:10:39 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"3"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.2ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('3', '2024-04-09 13:10:39.605389', '2024-04-09 13:10:39.605389')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 2.2ms | Allocations: 2572)
+
+
+  
+NameError (undefined local variable or method `post' for #<PostsController:0x0000000000bc70>):
+  
+app/controllers/posts_controller.rb:11:in `create'
+Started GET "/" for ::1 at 2024-04-09 22:13:23 +0900
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2150)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 17486)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.2ms | Allocations: 17787)
+
+
+Started POST "/posts" for ::1 at 2024-04-09 22:13:31 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"2"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('2', '2024-04-09 13:13:31.753941', '2024-04-09 13:13:31.753941')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 2.5ms | Allocations: 2559)
+
+
+  
+NameError (undefined local variable or method `post' for #<PostsController:0x0000000000c0d0>):
+  
+app/controllers/posts_controller.rb:11:in `create'
+Started GET "/" for ::1 at 2024-04-09 22:25:07 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 6728)
+  Rendered layout layouts/application.html.erb (Duration: 38.5ms | Allocations: 47355)
+Completed 200 OK in 44ms (Views: 39.3ms | ActiveRecord: 0.9ms | Allocations: 52420)
+
+
+Started POST "/posts" for ::1 at 2024-04-09 22:25:12 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"3"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.2ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('3', '2024-04-09 13:25:12.863077', '2024-04-09 13:25:12.863077')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 2.3ms | Allocations: 3681)
+
+
+  
+NameError (undefined local variable or method `post' for #<PostsController:0x0000000000ab18>):
+  
+app/controllers/posts_controller.rb:11:in `create'
+Started POST "/posts" for ::1 at 2024-04-09 22:30:28 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"3"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.1ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('3', '2024-04-09 13:30:28.657422', '2024-04-09 13:30:28.657422')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 2.8ms | Allocations: 4270)
+
+
+Started POST "/posts" for ::1 at 2024-04-09 22:31:49 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"3"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.2ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('3', '2024-04-09 13:31:49.908318', '2024-04-09 13:31:49.908318')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 2.4ms | Allocations: 2289)
+
+
+Started GET "/" for ::1 at 2024-04-09 22:31:52 +0900
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 2387)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 17766)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.3ms | Allocations: 18363)
+
+
+Started POST "/posts" for ::1 at 2024-04-09 22:32:00 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"メモ"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.2ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('メモ', '2024-04-09 13:32:00.098129', '2024-04-09 13:32:00.098129')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 2.4ms | Allocations: 2269)
+
+
+Started GET "/" for ::1 at 2024-04-09 22:32:03 +0900
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 2277)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 4438)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 4738)
+
+
+Started POST "/posts" for ::1 at 2024-04-09 22:36:51 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"メモ12"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.2ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('メモ12', '2024-04-09 13:36:51.124089', '2024-04-09 13:36:51.124089')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 2.7ms | Allocations: 4147)
+
+
+Started POST "/posts" for ::1 at 2024-04-09 22:36:52 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"メモ12"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.1ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('メモ12', '2024-04-09 13:36:52.203747', '2024-04-09 13:36:52.203747')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 2.1ms | Allocations: 2258)
+
+
+Started POST "/posts" for ::1 at 2024-04-09 22:36:55 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"メモ12"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.2ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('メモ12', '2024-04-09 13:36:55.924346', '2024-04-09 13:36:55.924346')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 2.0ms | Allocations: 2284)
+
+
+Started POST "/posts" for ::1 at 2024-04-09 22:37:10 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"メモ12"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.2ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('メモ12', '2024-04-09 13:37:10.504243', '2024-04-09 13:37:10.504243')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 3.6ms | Allocations: 2287)
+
+
+Started POST "/posts" for ::1 at 2024-04-09 22:37:11 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"メモ12"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('メモ12', '2024-04-09 13:37:11.005620', '2024-04-09 13:37:11.005620')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 3.6ms | Allocations: 2290)
+
+
+Started POST "/posts" for ::1 at 2024-04-09 22:37:11 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"メモ12"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('メモ12', '2024-04-09 13:37:11.574565', '2024-04-09 13:37:11.574565')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 5.4ms | Allocations: 2278)
+
+
+Started POST "/posts" for ::1 at 2024-04-09 22:37:12 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"メモ12"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.2ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('メモ12', '2024-04-09 13:37:12.004231', '2024-04-09 13:37:12.004231')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 3.5ms | Allocations: 2291)
+
+
+Started POST "/posts" for ::1 at 2024-04-09 22:37:15 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"メモ12"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.2ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('メモ12', '2024-04-09 13:37:15.834016', '2024-04-09 13:37:15.834016')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 3.1ms | Allocations: 2272)
+
+
+Started POST "/posts" for ::1 at 2024-04-09 22:37:16 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"メモ12"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.2ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('メモ12', '2024-04-09 13:37:16.244105', '2024-04-09 13:37:16.244105')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 6.4ms | Allocations: 2284)
+
+
+Started GET "/" for ::1 at 2024-04-09 22:37:18 +0900
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2606)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 16786)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.3ms | Allocations: 17359)
+
+
+Started POST "/posts" for ::1 at 2024-04-09 22:39:42 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"1"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('1', '2024-04-09 13:39:42.327170', '2024-04-09 13:39:42.327170')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 2.2ms | Allocations: 2272)
+
+
+Started GET "/" for ::1 at 2024-04-09 22:50:05 +0900
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2536)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 17761)
+Completed 200 OK in 19ms (Views: 16.8ms | ActiveRecord: 0.8ms | Allocations: 18175)
+
+
+Started POST "/posts" for ::1 at 2024-04-09 22:50:09 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"2"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.2ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('2', '2024-04-09 13:50:09.067033', '2024-04-09 13:50:09.067033')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 2.5ms | Allocations: 2269)
+
+
+Started POST "/posts" for ::1 at 2024-04-09 22:50:25 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"2"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.2ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('2', '2024-04-09 13:50:25.458799', '2024-04-09 13:50:25.458799')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 2.2ms | Allocations: 2267)
+
+
+Started POST "/posts" for ::1 at 2024-04-09 22:52:12 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"100"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.2ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('100', '2024-04-09 13:52:12.190294', '2024-04-09 13:52:12.190294')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 2.1ms | Allocations: 2287)
+
+
+Started GET "/" for ::1 at 2024-04-09 22:52:18 +0900
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2921)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 18252)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.3ms | Allocations: 19105)
+
+
+Started POST "/posts" for ::1 at 2024-04-09 22:52:19 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>""}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.1ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('', '2024-04-09 13:52:19.404115', '2024-04-09 13:52:19.404115')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 2.2ms | Allocations: 2285)
+
+
+Started POST "/posts" for ::1 at 2024-04-09 22:53:00 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>""}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.2ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('', '2024-04-09 13:53:00.901661', '2024-04-09 13:53:00.901661')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 1.8ms | Allocations: 2275)
+
+
+Started POST "/posts" for ::1 at 2024-04-09 22:53:14 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"150"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('150', '2024-04-09 13:53:14.484376', '2024-04-09 13:53:14.484376')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 2.5ms | Allocations: 2266)
+
+
+Started GET "/" for ::1 at 2024-04-09 22:54:24 +0900
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 2668)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 17877)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.3ms | Allocations: 18177)
+
+
+Started POST "/posts" for ::1 at 2024-04-09 22:54:34 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"いえーい"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mPost Create (0.6ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('いえーい', '2024-04-09 13:54:34.214595', '2024-04-09 13:54:34.214595')[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:10:in `create'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 2.7ms | Allocations: 2290)
+
+
+Started GET "/" for ::1 at 2024-04-09 23:00:02 +0900
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2703)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 17778)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.6ms | Allocations: 18077)
+
+
+Started POST "/post" for ::1 at 2024-04-09 23:00:05 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/post"):
+  
