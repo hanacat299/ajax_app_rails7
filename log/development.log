@@ -1007,3 +1007,62 @@ Started POST "/post" for ::1 at 2024-04-09 23:00:05 +0900
   
 ActionController::RoutingError (No route matches [POST] "/post"):
   
+Started GET "/" for ::1 at 2024-04-13 17:56:22 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#index as HTML
+Filter chain halted as :basic_auth rendered or redirected
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms | Allocations: 1292)
+
+
+Started GET "/" for ::1 at 2024-04-13 17:56:31 +0900
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 12.0ms | Allocations: 7187)
+  Rendered layout layouts/application.html.erb (Duration: 72.3ms | Allocations: 50279)
+Completed 200 OK in 90ms (Views: 74.2ms | ActiveRecord: 5.1ms | Allocations: 54200)
+
+
+Started GET "/" for ::1 at 2024-04-13 18:05:01 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 7298)
+  Rendered layout layouts/application.html.erb (Duration: 42.5ms | Allocations: 42326)
+Completed 200 OK in 48ms (Views: 43.3ms | ActiveRecord: 1.0ms | Allocations: 47439)
+
+
+Started GET "/" for ::1 at 2024-04-13 18:53:57 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 7298)
+  Rendered layout layouts/application.html.erb (Duration: 39.3ms | Allocations: 42430)
+Completed 200 OK in 45ms (Views: 39.7ms | ActiveRecord: 1.3ms | Allocations: 47547)
+
+
+Started GET "/" for ::1 at 2024-04-13 18:54:21 +0900
+Processing by PostsController#index as HTML
+Filter chain halted as :basic_auth rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 98)
+
+
+Started GET "/" for ::1 at 2024-04-13 18:54:32 +0900
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2629)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 4790)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.5ms | Allocations: 5117)
+
+
